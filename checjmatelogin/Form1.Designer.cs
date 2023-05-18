@@ -29,43 +29,44 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Checkmate));
-            this.label2 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label7 = new Label();
+            SuspendLayout();
             // 
-            // label2
+            // label7
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 22.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(552, 485);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(400, 80);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "TAP TO LOGIN";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.UseCompatibleTextRendering = true;
-            this.label2.UseWaitCursor = true;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Cursor = Cursors.Hand;
+            label7.Font = new Font("Segoe UI", 37F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ControlLightLight;
+            label7.Location = new Point(520, 500);
+            label7.Name = "label7";
+            label7.Size = new Size(454, 84);
+            label7.TabIndex = 65;
+            label7.Text = "TAP TO LOGIN";
+            label7.Click += label7_Click;
             // 
             // Checkmate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1484, 798);
-            this.Controls.Add(this.label2);
-            this.DoubleBuffered = true;
-            this.Name = "Checkmate";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Checkmate";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1484, 798);
+            Controls.Add(label7);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Checkmate";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "CHECKMATE";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Label label2;
+        private Label label7;
     }
 }

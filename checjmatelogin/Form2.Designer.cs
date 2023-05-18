@@ -29,156 +29,176 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login2));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_login1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            label1 = new Label();
+            label7 = new Label();
+            pictureBox1 = new PictureBox();
+            button2 = new Button();
+            button1 = new Button();
+            btn_login1 = new Button();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            username = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btn_login1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.username);
-            this.panel1.Location = new System.Drawing.Point(448, 366);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 340);
-            this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(162, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(197, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 45);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Employer Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_login1
-            // 
-            this.btn_login1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_login1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_login1.ForeColor = System.Drawing.Color.Snow;
-            this.btn_login1.Location = new System.Drawing.Point(3, 286);
-            this.btn_login1.Name = "btn_login1";
-            this.btn_login1.Size = new System.Drawing.Size(140, 45);
-            this.btn_login1.TabIndex = 4;
-            this.btn_login1.Text = "Employee Login";
-            this.btn_login1.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(229, 226);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(256, 34);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Location = new System.Drawing.Point(229, 146);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 34);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btn_login1);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(username);
+            panel1.Location = new Point(483, 302);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(531, 340);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(35, 226);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "PASSWORD :";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(4, 215);
+            label1.Name = "label1";
+            label1.Size = new Size(235, 47);
+            label1.TabIndex = 88;
+            label1.Text = "PASSWORD :";
             // 
-            // username
+            // label7
             // 
-            this.username.BackColor = System.Drawing.Color.Transparent;
-            this.username.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.username.Location = new System.Drawing.Point(35, 146);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(188, 39);
-            this.username.TabIndex = 0;
-            this.username.Text = "USERNAME :";
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 21F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ControlLightLight;
+            label7.Location = new Point(6, 136);
+            label7.Name = "label7";
+            label7.Size = new Size(232, 47);
+            label7.TabIndex = 87;
+            label7.Text = "USERNAME :";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(196, 7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 120);
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(385, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 45);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Admin Login";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.BackColor = SystemColors.Highlight;
+            button2.Cursor = Cursors.Hand;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.Snow;
+            button2.Location = new Point(385, 286);
+            button2.Name = "button2";
+            button2.Size = new Size(140, 45);
+            button2.TabIndex = 7;
+            button2.Text = "Admin Login";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.Highlight;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Snow;
+            button1.Location = new Point(197, 286);
+            button1.Name = "button1";
+            button1.Size = new Size(140, 45);
+            button1.TabIndex = 5;
+            button1.Text = "Employer Login";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // btn_login1
+            // 
+            btn_login1.AllowDrop = true;
+            btn_login1.BackColor = SystemColors.Highlight;
+            btn_login1.Cursor = Cursors.Hand;
+            btn_login1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_login1.ForeColor = Color.Snow;
+            btn_login1.Location = new Point(3, 286);
+            btn_login1.Name = "btn_login1";
+            btn_login1.Size = new Size(140, 45);
+            btn_login1.TabIndex = 4;
+            btn_login1.Text = "Employee Login";
+            btn_login1.UseVisualStyleBackColor = false;
+            btn_login1.Click += btn_login1_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.Gainsboro;
+            textBox2.Location = new Point(244, 226);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
+            textBox2.Size = new Size(256, 34);
+            textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.Gainsboro;
+            textBox1.Location = new Point(245, 146);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(256, 34);
+            textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // username
+            // 
+            username.BackColor = Color.Transparent;
+            username.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            username.ForeColor = Color.FromArgb(255, 128, 0);
+            username.Location = new Point(35, 146);
+            username.Name = "username";
+            username.Size = new Size(188, 39);
+            username.TabIndex = 0;
             // 
             // login2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1484, 798);
-            this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
-            this.Name = "login2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Checkmate";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1484, 798);
+            Controls.Add(panel1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "login2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "CHECKMATE";
+            Load += Form2_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
         private TextBox textBox1;
-        private Label label1;
         private Label username;
         private Button button1;
         private Button btn_login1;
         private TextBox textBox2;
-        private PictureBox pictureBox1;
         private Button button2;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label7;
     }
 }
