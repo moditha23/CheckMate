@@ -29,209 +29,155 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Complaint_Review_Employer));
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            richTextBox1 = new RichTextBox();
-            label9 = new Label();
-            label8 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label1 = new Label();
-            label2 = new Label();
-            richTextBox2 = new RichTextBox();
-            textBox1 = new TextBox();
-            dateTimePicker2 = new DateTimePicker();
-            label7 = new Label();
-            label6 = new Label();
-            textBox2 = new TextBox();
-            SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.richTextBoxremark = new System.Windows.Forms.RichTextBox();
+            this.dataGridViewcomplain = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxdate = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcomplain)).BeginInit();
+            this.SuspendLayout();
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Cursor = Cursors.Hand;
-            label5.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(522, 29);
-            label5.Name = "label5";
-            label5.Size = new Size(102, 40);
-            label5.TabIndex = 114;
-            label5.Text = "CLOSE";
-            label5.Click += label5_Click;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(522, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 40);
+            this.label5.TabIndex = 114;
+            this.label5.Text = "CLOSE";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Cursor = Cursors.Hand;
-            label4.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(26, 29);
-            label4.Name = "label4";
-            label4.Size = new Size(126, 40);
-            label4.TabIndex = 113;
-            label4.Text = "SALARY";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(26, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 40);
+            this.label4.TabIndex = 113;
+            this.label4.Text = "SALARY";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(64, 64, 64);
-            label3.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ControlLight;
-            label3.Location = new Point(176, 29);
-            label3.Name = "label3";
-            label3.Size = new Size(303, 40);
-            label3.TabIndex = 111;
-            label3.Text = "COMPLAINT REVIEW";
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BackColor = Color.Silver;
-            richTextBox1.Location = new Point(251, 233);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1194, 260);
-            richTextBox1.TabIndex = 120;
-            richTextBox1.Text = "";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(176, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(303, 40);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "COMPLAINT REVIEW";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.ControlLightLight;
-            label9.Location = new Point(24, 221);
-            label9.Name = "label9";
-            label9.Size = new Size(212, 40);
-            label9.TabIndex = 119;
-            label9.Text = "COMPLAINT  :";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(24, 118);
-            label8.Name = "label8";
-            label8.Size = new Size(231, 40);
-            label8.TabIndex = 117;
-            label8.Text = "DEPARTMENT  :";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(885, 135);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(265, 27);
-            dateTimePicker1.TabIndex = 116;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(588, 126);
-            label1.Name = "label1";
-            label1.Size = new Size(291, 40);
-            label1.TabIndex = 115;
-            label1.Text = "COMPLAINT DATE  :";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(24, 164);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(212, 40);
+            this.label9.TabIndex = 119;
+            this.label9.Text = "COMPLAINT  :";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(24, 512);
-            label2.Name = "label2";
-            label2.Size = new Size(177, 40);
-            label2.TabIndex = 121;
-            label2.Text = "REMARKS  :";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(24, 455);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 40);
+            this.label2.TabIndex = 121;
+            this.label2.Text = "REMARKS  :";
             // 
-            // richTextBox2
+            // richTextBoxremark
             // 
-            richTextBox2.Location = new Point(251, 503);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(1194, 211);
-            richTextBox2.TabIndex = 122;
-            richTextBox2.Text = "";
+            this.richTextBoxremark.Location = new System.Drawing.Point(251, 446);
+            this.richTextBoxremark.Name = "richTextBoxremark";
+            this.richTextBoxremark.Size = new System.Drawing.Size(1194, 211);
+            this.richTextBoxremark.TabIndex = 122;
+            this.richTextBoxremark.Text = "";
             // 
-            // textBox1
+            // dataGridViewcomplain
             // 
-            textBox1.BackColor = Color.Silver;
-            textBox1.Location = new Point(282, 126);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(197, 27);
-            textBox1.TabIndex = 123;
+            this.dataGridViewcomplain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewcomplain.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridViewcomplain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewcomplain.Location = new System.Drawing.Point(251, 164);
+            this.dataGridViewcomplain.Name = "dataGridViewcomplain";
+            this.dataGridViewcomplain.RowHeadersWidth = 51;
+            this.dataGridViewcomplain.RowTemplate.Height = 29;
+            this.dataGridViewcomplain.Size = new System.Drawing.Size(1194, 260);
+            this.dataGridViewcomplain.TabIndex = 123;
+            this.dataGridViewcomplain.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewcomplain_CellContentClick);
             // 
-            // dateTimePicker2
+            // button1
             // 
-            dateTimePicker2.Location = new Point(885, 175);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(265, 27);
-            dateTimePicker2.TabIndex = 125;
+            this.button1.Location = new System.Drawing.Point(1344, 672);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 35);
+            this.button1.TabIndex = 124;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label7
+            // label1
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(588, 166);
-            label7.Name = "label7";
-            label7.Size = new Size(227, 40);
-            label7.TabIndex = 124;
-            label7.Text = "REVIEW DATE  :";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(94, 672);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 40);
+            this.label1.TabIndex = 125;
+            this.label1.Text = "Date :";
             // 
-            // label6
+            // textBoxdate
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(24, 162);
-            label6.Name = "label6";
-            label6.Size = new Size(250, 40);
-            label6.TabIndex = 126;
-            label6.Text = "COMPLAINT ID  :";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.Silver;
-            textBox2.Location = new Point(282, 174);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(197, 27);
-            textBox2.TabIndex = 127;
+            this.textBoxdate.Location = new System.Drawing.Point(251, 685);
+            this.textBoxdate.Name = "textBoxdate";
+            this.textBoxdate.Size = new System.Drawing.Size(262, 27);
+            this.textBoxdate.TabIndex = 126;
             // 
             // Complaint_Review_Employer
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1484, 798);
-            Controls.Add(textBox2);
-            Controls.Add(label6);
-            Controls.Add(dateTimePicker2);
-            Controls.Add(label7);
-            Controls.Add(textBox1);
-            Controls.Add(richTextBox2);
-            Controls.Add(label2);
-            Controls.Add(richTextBox1);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "Complaint_Review_Employer";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "CHECKMATE";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1484, 798);
+            this.Controls.Add(this.textBoxdate);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridViewcomplain);
+            this.Controls.Add(this.richTextBoxremark);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "Complaint_Review_Employer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CHECKMATE";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcomplain)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -239,17 +185,12 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private RichTextBox richTextBox1;
         private Label label9;
-        private Label label8;
-        private DateTimePicker dateTimePicker1;
-        private Label label1;
         private Label label2;
-        private RichTextBox richTextBox2;
-        private TextBox textBox1;
-        private DateTimePicker dateTimePicker2;
-        private Label label7;
-        private Label label6;
-        private TextBox textBox2;
+        private RichTextBox richTextBoxremark;
+        private DataGridView dataGridViewcomplain;
+        private Button button1;
+        private Label label1;
+        private TextBox textBoxdate;
     }
 }
