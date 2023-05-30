@@ -191,6 +191,7 @@
             this.dataGridViewremark.RowTemplate.Height = 29;
             this.dataGridViewremark.Size = new System.Drawing.Size(1119, 188);
             this.dataGridViewremark.TabIndex = 110;
+            this.dataGridViewremark.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewremark_CellContentClick);
             // 
             // Complaint_Employee
             // 

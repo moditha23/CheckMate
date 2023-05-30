@@ -90,3 +90,4 @@ C:\Users\ASUS\OneDrive\Desktop\New folder\CheckMate\checjmatelogin\bin\Debug\net
 C:\Users\ASUS\OneDrive\Desktop\New folder\CheckMate\checjmatelogin\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ASUS\OneDrive\Desktop\New folder\CheckMate\checjmatelogin\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ASUS\OneDrive\Desktop\New folder\CheckMate\checjmatelogin\obj\Debug\net6.0-windows\checjmatelogin.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Desktop\New folder\CheckMate\checjmatelogin\obj\Debug\net6.0-windows\checjmatelogin.Acc_Reg.resources

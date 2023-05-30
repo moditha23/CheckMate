@@ -70,11 +70,14 @@
             // dataGridViewed
             // 
             this.dataGridViewed.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewed.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewed.Location = new System.Drawing.Point(26, 397);
+            this.dataGridViewed.Location = new System.Drawing.Point(70, 366);
             this.dataGridViewed.Name = "dataGridViewed";
+            this.dataGridViewed.ReadOnly = true;
             this.dataGridViewed.RowHeadersWidth = 51;
             this.dataGridViewed.RowTemplate.Height = 29;
+            this.dataGridViewed.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewed.Size = new System.Drawing.Size(1439, 316);
             this.dataGridViewed.TabIndex = 57;
             this.dataGridViewed.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewed_CellContentClick);

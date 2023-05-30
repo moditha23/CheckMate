@@ -175,10 +175,10 @@ namespace checjmatelogin
             textBoxname.Text = dataGridViewed.SelectedRows[0].Cells[1].Value.ToString();
             textBoxaddress.Text = dataGridViewed.SelectedRows[0].Cells[2].Value.ToString();
             textBoxDOB.Text = dataGridViewed.SelectedRows[0].Cells[3].Value.ToString();
-            comboBoxgender.SelectedItem = dataGridViewed.SelectedRows[0].Cells[4].ToString();
+            comboBoxgender.SelectedItem = dataGridViewed.SelectedRows[0].Cells[4].Value.ToString();
             textBoxphone.Text = dataGridViewed.SelectedRows[0].Cells[5].Value.ToString();
             textBoxqulifications.Text = dataGridViewed.SelectedRows[0].Cells[6].Value.ToString();
-            comboBoxpositon.SelectedItem = dataGridViewed.SelectedRows[0].Cells[7].ToString();
+            comboBoxpositon.SelectedItem = dataGridViewed.SelectedRows[0].Cells[7].Value.ToString();
             textBoxHD.Text = dataGridViewed.SelectedRows[0].Cells[8].Value.ToString();
             textBoxbasesalary.Text = dataGridViewed.SelectedRows[0].Cells[9].Value.ToString();
             if (textBoxname.Text == "")
@@ -194,36 +194,36 @@ namespace checjmatelogin
         private void button2_Click(object sender, EventArgs e)
         {
             if (textBoxname.Text == "" || textBoxaddress.Text == "" || textBoxphone.Text == "" || textBoxbasesalary.Text == "" || textBoxDOB.Text == "" || textBoxHD.Text == "" || comboBoxgender.SelectedIndex == -1 || textBoxqulifications.Text == "" || comboBoxpositon.SelectedIndex == -1)
-            {
-                MessageBox.Show("Select an employee");
-            }
-            else
-            {
-                try
-                {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("Update into EmployeeDetails set Name=@eN,Address=@eA,DOB=@eDOB,Gender=@eG,TelNumber=@eP,Qualification=@eQ,Position=@ePo,HiredDate=@eHD,BasicSalary=@eBS where Employee_ID=@eKey", Con);
-                    cmd.Parameters.AddWithValue("@eN", textBoxname.Text);
-                    cmd.Parameters.AddWithValue("@eA", textBoxaddress.Text);
-                    cmd.Parameters.AddWithValue("@eDOB", textBoxDOB.Text);
-                    cmd.Parameters.AddWithValue("@eP", textBoxphone.Text);
-                    cmd.Parameters.AddWithValue("@eHD", textBoxHD.Text);
-                    cmd.Parameters.AddWithValue("@eBS", textBoxbasesalary.Text);
-                    cmd.Parameters.AddWithValue("@eG", comboBoxgender.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@eQ", textBoxqulifications.Text);
-                    cmd.Parameters.AddWithValue("@ePo", comboBoxpositon.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@eKey", Key);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Updated!");
-                    Con.Close();
-                    DisplayAccount();
-                    Reset();
-                }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show(Ex.Message);
-                }
-            }
+           {
+               MessageBox.Show("Select an employee");
+           }
+           else
+           {
+               try
+               {
+                   Con.Open();
+                   SqlCommand cmd = new SqlCommand("Update EmployeeDetails set Name=@eN,Address=@eA,DOB=@eDOB,Gender=@eG,TelNumber=@eP,Qualification=@eQ,Position=@ePo,HiredDate=@eHD,BasicSalary=@eBS where Employee_ID=@eKey", Con);
+                   cmd.Parameters.AddWithValue("@eN", textBoxname.Text);
+                   cmd.Parameters.AddWithValue("@eA", textBoxaddress.Text);
+                   cmd.Parameters.AddWithValue("@eDOB", textBoxDOB.Text);
+                   cmd.Parameters.AddWithValue("@eP", textBoxphone.Text);
+                   cmd.Parameters.AddWithValue("@eHD", textBoxHD.Text);
+                   cmd.Parameters.AddWithValue("@eBS", textBoxbasesalary.Text);
+                   cmd.Parameters.AddWithValue("@eG", comboBoxgender.SelectedItem.ToString());
+                   cmd.Parameters.AddWithValue("@eQ", textBoxqulifications.Text);
+                   cmd.Parameters.AddWithValue("@ePo", comboBoxpositon.SelectedItem.ToString());
+                   cmd.Parameters.AddWithValue("@eKey", Key);
+                   cmd.ExecuteNonQuery();
+                   MessageBox.Show("Employee Updated!");
+                   Con.Close();
+                   DisplayAccount();
+                   Reset();
+               }
+               catch (Exception Ex)
+               {
+                   MessageBox.Show(Ex.Message);
+               }
+           }
         }
     }
 }

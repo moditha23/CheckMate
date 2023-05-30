@@ -109,7 +109,11 @@ namespace checjmatelogin
 
         private void Complaint_Employee_Load(object sender, EventArgs e)
         {
+        }
 
+        private void dataGridViewremark_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
