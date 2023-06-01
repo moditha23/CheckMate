@@ -1,2 +1,0 @@
-checjmatelogin filter=lfs diff=lfs merge=lfs -text
-checjmatelogin.sln filter=lfs diff=lfs merge=lfs -text
