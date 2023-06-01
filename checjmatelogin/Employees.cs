@@ -20,7 +20,8 @@ namespace checjmatelogin
             DisplayAccount();
         }
 
-        SqlConnection Con= new SqlConnection(@"Data Source=LAPTOP-6JT31SC8;Initial Catalog=Checkmate2;Integrated Security=True");
+        SqlConnection Con = new SqlConnection("Data Source=DESKTOP-3AHD2FN;Initial Catalog=CheckMate2;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3AHD2FN;Initial Catalog=CheckMate;Integrated Security=True");
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -53,7 +54,26 @@ namespace checjmatelogin
 
         private void Employees_Load(object sender, EventArgs e)
         {
+            SqlCommand cmd = new SqlCommand("Select Department_ID, Name from Department", con);
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
 
+            DataRow dr = dt.NewRow();
+            dr[1] = "Select Department";
+            dt.Rows.InsertAt(dr, 0);
+
+            comboBoxDepartment.DataSource = dt;
+            comboBoxDepartment.DisplayMember = "Name";
+            comboBoxDepartment.ValueMember = "Department_ID";
+
+            comboBoxgender.SelectedIndex = 0;
+            comboBoxpositon.SelectedIndex = 0;
+
+            this.comboBoxDepartment.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.comboBoxgender.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.comboBoxpositon.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void DisplayAccount()
@@ -76,23 +96,28 @@ namespace checjmatelogin
             textBoxbasesalary.Text = "";
             textBoxDOB.Text = "";
             textBoxHD.Text = "";
-            comboBoxgender.SelectedIndex = -1;
+            comboBoxgender.SelectedIndex = 0;
             textBoxqulifications.Text = "";
-            comboBoxpositon.SelectedIndex = -1;
+            comboBoxpositon.SelectedIndex = 0;
+            comboBoxDepartment.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBoxname.Text=="" || textBoxaddress.Text=="" || textBoxphone.Text=="" || textBoxbasesalary.Text=="" || textBoxDOB.Text == "" || textBoxHD.Text == "" || comboBoxgender.SelectedIndex== -1 || textBoxqulifications.Text=="" || comboBoxpositon.SelectedIndex== -1)
+            if (textBoxname.Text == "" || textBoxaddress.Text == "" || textBoxphone.Text == "" || textBoxbasesalary.Text == "" || textBoxDOB.Text == "" || textBoxHD.Text == "" || comboBoxgender.SelectedIndex == 0 || comboBoxgender.Text == "" || textBoxqulifications.Text == "" || comboBoxpositon.SelectedIndex == 0 || comboBoxpositon.Text == "" || comboBoxDepartment.SelectedIndex == 0 || comboBoxDepartment.Text == "")
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Missing Information", "CheckMate");
+            }
+            else if (comboBoxDepartment.SelectedIndex == 0 || comboBoxgender.SelectedIndex == 0 || comboBoxpositon.SelectedIndex == 0)
+            {
+                MessageBox.Show("Missing Information", "CheckMate");
             }
             else
             {
                 try
                 {
                     Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into EmployeeDetails(Name,Address,DOB,Gender,TelNumber,Qualification,Position,HiredDate,BasicSalary)values(@eN,@eA,@eDOB,@eG,@eP,@eQ,@ePo,@eHD,@eBS)", Con);
+                    SqlCommand cmd = new SqlCommand("insert into EmployeeDetails(Name,Address,DOB,Gender,TelNumber,Qualification,Position,HiredDate,BasicSalary,Department)values(@eN,@eA,@eDOB,@eG,@eP,@eQ,@ePo,@eHD,@eBS,@eDep)", Con);
                     cmd.Parameters.AddWithValue("@eN", textBoxname.Text);
                     cmd.Parameters.AddWithValue("@eA", textBoxaddress.Text);
                     cmd.Parameters.AddWithValue("@eDOB", textBoxDOB.Text);
@@ -102,8 +127,9 @@ namespace checjmatelogin
                     cmd.Parameters.AddWithValue("@eG", comboBoxgender.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@eQ", textBoxqulifications.Text);
                     cmd.Parameters.AddWithValue("@ePo", comboBoxpositon.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@eDep", comboBoxDepartment.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Added!");
+                    MessageBox.Show("Employee Added!", "CheckMate");
                     Con.Close();
                     DisplayAccount();
                     Reset();
@@ -145,11 +171,15 @@ namespace checjmatelogin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (Key == 0)
+            if (Key < 0 && textBoxname.Text == "" && textBoxaddress.Text == "" && textBoxphone.Text == "" && textBoxbasesalary.Text == "" && textBoxDOB.Text == "" && textBoxHD.Text == "" && comboBoxgender.SelectedIndex == 0 && textBoxqulifications.Text == "" && comboBoxpositon.SelectedIndex == 0 && comboBoxDepartment.SelectedIndex == 0)
             {
-                MessageBox.Show("Select an employee");
+                MessageBox.Show("Select an Employee", "CheckMate");
             }
-            else
+            else if(textBoxname.Text == "" || textBoxphone.Text =="")
+            {
+                MessageBox.Show("Select an Employee", "CheckMate");
+            }
+            else if(MessageBox.Show("Are you sure you want to delete this Employee?", "CheckMate", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
             {
                 try
                 {
@@ -157,7 +187,7 @@ namespace checjmatelogin
                     SqlCommand cmd = new SqlCommand("delete from EmployeeDetails where Employee_ID=@eKey ", Con);
                     cmd.Parameters.AddWithValue("@eKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Deleted!");
+                    MessageBox.Show("Employee Deleted!", "CheckMate", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Con.Close();
                     DisplayAccount();
                     Reset();
@@ -181,6 +211,7 @@ namespace checjmatelogin
             comboBoxpositon.SelectedItem = dataGridViewed.SelectedRows[0].Cells[7].Value.ToString();
             textBoxHD.Text = dataGridViewed.SelectedRows[0].Cells[8].Value.ToString();
             textBoxbasesalary.Text = dataGridViewed.SelectedRows[0].Cells[9].Value.ToString();
+            comboBoxDepartment.Text = dataGridViewed.SelectedRows[0].Cells[10].Value.ToString();
             if (textBoxname.Text == "")
             {
                 Key = 0;
@@ -193,37 +224,50 @@ namespace checjmatelogin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBoxname.Text == "" || textBoxaddress.Text == "" || textBoxphone.Text == "" || textBoxbasesalary.Text == "" || textBoxDOB.Text == "" || textBoxHD.Text == "" || comboBoxgender.SelectedIndex == -1 || textBoxqulifications.Text == "" || comboBoxpositon.SelectedIndex == -1)
-           {
-               MessageBox.Show("Select an employee");
-           }
-           else
-           {
+            if (textBoxname.Text == "" || textBoxaddress.Text == "" || textBoxphone.Text == "" || textBoxbasesalary.Text == "" || textBoxDOB.Text == "" || textBoxHD.Text == "" || textBoxqulifications.Text == "")
+            {
+               MessageBox.Show("Missing Information", "CheckMate");
+            }
+            else if (textBoxname.Text == "" && textBoxaddress.Text == "" && textBoxphone.Text == "" && textBoxbasesalary.Text == "" && textBoxDOB.Text == "" && textBoxHD.Text == "" && textBoxqulifications.Text == "")
+            {
+                MessageBox.Show("Select an employee", "CheckMate");
+            }
+            else if(comboBoxDepartment.SelectedIndex == 0 || comboBoxgender.SelectedIndex == 0 || comboBoxpositon.SelectedIndex == 0)
+            {
+                MessageBox.Show("Missing Information", "CheckMate");
+            }
+            else
+            {
                try
                {
-                   Con.Open();
-                   SqlCommand cmd = new SqlCommand("Update EmployeeDetails set Name=@eN,Address=@eA,DOB=@eDOB,Gender=@eG,TelNumber=@eP,Qualification=@eQ,Position=@ePo,HiredDate=@eHD,BasicSalary=@eBS where Employee_ID=@eKey", Con);
-                   cmd.Parameters.AddWithValue("@eN", textBoxname.Text);
-                   cmd.Parameters.AddWithValue("@eA", textBoxaddress.Text);
-                   cmd.Parameters.AddWithValue("@eDOB", textBoxDOB.Text);
-                   cmd.Parameters.AddWithValue("@eP", textBoxphone.Text);
-                   cmd.Parameters.AddWithValue("@eHD", textBoxHD.Text);
-                   cmd.Parameters.AddWithValue("@eBS", textBoxbasesalary.Text);
-                   cmd.Parameters.AddWithValue("@eG", comboBoxgender.SelectedItem.ToString());
-                   cmd.Parameters.AddWithValue("@eQ", textBoxqulifications.Text);
-                   cmd.Parameters.AddWithValue("@ePo", comboBoxpositon.SelectedItem.ToString());
-                   cmd.Parameters.AddWithValue("@eKey", Key);
-                   cmd.ExecuteNonQuery();
-                   MessageBox.Show("Employee Updated!");
-                   Con.Close();
-                   DisplayAccount();
-                   Reset();
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("Update EmployeeDetails set Name=@eN,Address=@eA,DOB=@eDOB,Gender=@eG,TelNumber=@eP,Qualification=@eQ,Position=@ePo,HiredDate=@eHD,BasicSalary=@eBS,Department=@eDep where Employee_ID=@eKey", Con);
+                    cmd.Parameters.AddWithValue("@eN", textBoxname.Text);
+                    cmd.Parameters.AddWithValue("@eA", textBoxaddress.Text);
+                    cmd.Parameters.AddWithValue("@eDOB", textBoxDOB.Text);
+                    cmd.Parameters.AddWithValue("@eP", textBoxphone.Text);
+                    cmd.Parameters.AddWithValue("@eHD", textBoxHD.Text);
+                    cmd.Parameters.AddWithValue("@eBS", textBoxbasesalary.Text);
+                    cmd.Parameters.AddWithValue("@eG", comboBoxgender.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@eQ", textBoxqulifications.Text);
+                    cmd.Parameters.AddWithValue("@ePo", comboBoxpositon.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@eDep", comboBoxDepartment.Text);
+                    cmd.Parameters.AddWithValue("@eKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Updated!", "CheckMate");
+                    Con.Close();
+                    DisplayAccount();
+                    Reset();
                }
                catch (Exception Ex)
                {
                    MessageBox.Show(Ex.Message);
                }
            }
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
     }
 }
