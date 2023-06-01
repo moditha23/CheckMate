@@ -57,6 +57,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxHD = new System.Windows.Forms.TextBox();
             this.textBoxDOB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewed)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +75,7 @@
             this.dataGridViewed.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewed.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewed.Location = new System.Drawing.Point(70, 366);
+            this.dataGridViewed.Location = new System.Drawing.Point(22, 400);
             this.dataGridViewed.Name = "dataGridViewed";
             this.dataGridViewed.ReadOnly = true;
             this.dataGridViewed.RowHeadersWidth = 51;
@@ -86,7 +89,7 @@
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(917, 322);
+            this.button3.Location = new System.Drawing.Point(799, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 47);
             this.button3.TabIndex = 56;
@@ -98,7 +101,7 @@
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(688, 322);
+            this.button2.Location = new System.Drawing.Point(585, 322);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 47);
             this.button2.TabIndex = 55;
@@ -110,7 +113,7 @@
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(460, 322);
+            this.button1.Location = new System.Drawing.Point(377, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 47);
             this.button1.TabIndex = 54;
@@ -122,6 +125,7 @@
             // 
             this.comboBoxpositon.FormattingEnabled = true;
             this.comboBoxpositon.Items.AddRange(new object[] {
+            "Select Position",
             "CEO",
             "Chairman",
             "Directors",
@@ -132,11 +136,10 @@
             "Junior Excecutive",
             "Intern",
             "Minor Staff",
-            "Security",
-            ""});
-            this.comboBoxpositon.Location = new System.Drawing.Point(1329, 265);
+            "Security"});
+            this.comboBoxpositon.Location = new System.Drawing.Point(1339, 265);
             this.comboBoxpositon.Name = "comboBoxpositon";
-            this.comboBoxpositon.Size = new System.Drawing.Size(136, 28);
+            this.comboBoxpositon.Size = new System.Drawing.Size(126, 28);
             this.comboBoxpositon.TabIndex = 53;
             // 
             // label15
@@ -186,6 +189,7 @@
             // 
             this.comboBoxgender.FormattingEnabled = true;
             this.comboBoxgender.Items.AddRange(new object[] {
+            "Select Gender",
             "Male",
             "Female",
             "Other"});
@@ -224,7 +228,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(470, 196);
+            this.label10.Location = new System.Drawing.Point(19, 196);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(141, 40);
             this.label10.TabIndex = 43;
@@ -236,7 +240,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(725, 148);
+            this.label9.Location = new System.Drawing.Point(555, 141);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(169, 40);
             this.label9.TabIndex = 42;
@@ -244,16 +248,16 @@
             // 
             // textBoxphone
             // 
-            this.textBoxphone.Location = new System.Drawing.Point(606, 205);
+            this.textBoxphone.Location = new System.Drawing.Point(166, 205);
             this.textBoxphone.Name = "textBoxphone";
-            this.textBoxphone.Size = new System.Drawing.Size(298, 27);
+            this.textBoxphone.Size = new System.Drawing.Size(287, 27);
             this.textBoxphone.TabIndex = 41;
             // 
             // textBoxaddress
             // 
-            this.textBoxaddress.Location = new System.Drawing.Point(892, 157);
+            this.textBoxaddress.Location = new System.Drawing.Point(722, 150);
             this.textBoxaddress.Name = "textBoxaddress";
-            this.textBoxaddress.Size = new System.Drawing.Size(573, 27);
+            this.textBoxaddress.Size = new System.Drawing.Size(350, 27);
             this.textBoxaddress.TabIndex = 40;
             // 
             // label8
@@ -262,7 +266,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(20, 195);
+            this.label8.Location = new System.Drawing.Point(1091, 141);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 40);
             this.label8.TabIndex = 39;
@@ -270,9 +274,9 @@
             // 
             // textBoxname
             // 
-            this.textBoxname.Location = new System.Drawing.Point(142, 153);
+            this.textBoxname.Location = new System.Drawing.Point(152, 150);
             this.textBoxname.Name = "textBoxname";
-            this.textBoxname.Size = new System.Drawing.Size(559, 27);
+            this.textBoxname.Size = new System.Drawing.Size(388, 27);
             this.textBoxname.TabIndex = 38;
             // 
             // label7
@@ -373,10 +377,42 @@
             // 
             // textBoxDOB
             // 
-            this.textBoxDOB.Location = new System.Drawing.Point(129, 205);
+            this.textBoxDOB.Location = new System.Drawing.Point(1200, 150);
             this.textBoxDOB.Name = "textBoxDOB";
-            this.textBoxDOB.Size = new System.Drawing.Size(298, 27);
+            this.textBoxDOB.Size = new System.Drawing.Size(265, 27);
             this.textBoxDOB.TabIndex = 117;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(469, 196);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(223, 40);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "DEPARTMENT :";
+            // 
+            // comboBoxDepartment
+            // 
+            this.comboBoxDepartment.FormattingEnabled = true;
+            this.comboBoxDepartment.Location = new System.Drawing.Point(698, 204);
+            this.comboBoxDepartment.Name = "comboBoxDepartment";
+            this.comboBoxDepartment.Size = new System.Drawing.Size(262, 28);
+            this.comboBoxDepartment.TabIndex = 119;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(1006, 322);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(126, 47);
+            this.button4.TabIndex = 120;
+            this.button4.Text = "RESET";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Employees
             // 
@@ -385,6 +421,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1484, 798);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.comboBoxDepartment);
             this.Controls.Add(this.textBoxDOB);
             this.Controls.Add(this.textBoxHD);
             this.Controls.Add(this.label16);
@@ -401,6 +439,7 @@
             this.Controls.Add(this.comboBoxgender);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxphone);
@@ -455,5 +494,8 @@
         private Label label16;
         private TextBox textBoxHD;
         private TextBox textBoxDOB;
+        private Label label6;
+        private ComboBox comboBoxDepartment;
+        private Button button4;
     }
 }
