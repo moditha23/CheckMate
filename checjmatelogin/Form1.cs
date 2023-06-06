@@ -1,22 +1,3 @@
-namespace checjmatelogin
-{
-    public partial class Checkmate : Form
-    {
-        public Checkmate()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click_1(object sender, EventArgs e)
-        {
-            login2 lg = new login2(); 
-            lg.Show();
-            this.Hide();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:87e61a7829f2245382f4b2cae3325bb726f18d79229dbd6366d15f73e6213227
+size 439

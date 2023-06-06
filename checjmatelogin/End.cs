@@ -1,25 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace checjmatelogin
-{
-    public partial class End : Form
-    {
-        public End()
-        {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:611e2b143ae4e103bbc86ffbabca8e4925f772257d469a38aa93a6e55461a707
+size 506
