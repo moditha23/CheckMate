@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Level 4\Project\checjmatelogin\checjmatelogin\bin\Debug\net6.0-windows\checjmatelogin.exe
 D:\Level 4\Project\checjmatelogin\checjmatelogin\bin\Debug\net6.0-windows\checjmatelogin.deps.json
 D:\Level 4\Project\checjmatelogin\checjmatelogin\bin\Debug\net6.0-windows\checjmatelogin.runtimeconfig.json
@@ -258,3 +259,8 @@ C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\obj\Debug\
 C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\obj\Debug\net6.0-windows\checjmatelogin.pdb
 C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\obj\Debug\net6.0-windows\checjmatelogin.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\obj\Debug\net6.0-windows\ref\checjmatelogin.dll
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:00af62e71791289e0a430af4603a109823633ec08f679b26068472ef3d4070ae
+size 22269
+>>>>>>> da041b9f78b8a15588ceeb6017ab7094aaa649c2
