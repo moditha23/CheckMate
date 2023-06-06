@@ -20,7 +20,7 @@ namespace checjmatelogin
             DisplayRemarks();
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=LAPTOP-6JT31SC8;Initial Catalog=Checkmate2;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=laptop-6jt31sc8;Initial Catalog=Checkmate2;Integrated Security=True");
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace checjmatelogin
         private void label3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Leave leave = new Leave();
+            Leave_emp leave = new Leave_emp();
             leave.ShowDialog();
         }
 

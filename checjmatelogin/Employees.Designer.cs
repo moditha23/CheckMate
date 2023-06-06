@@ -49,8 +49,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -101,7 +99,7 @@
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(585, 322);
+            this.button2.Location = new System.Drawing.Point(586, 322);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 47);
             this.button2.TabIndex = 55;
@@ -291,32 +289,6 @@
             this.label7.TabIndex = 37;
             this.label7.Text = "NAME  :";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(646, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 40);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "LEAVE";
-            this.label5.Click += new System.EventHandler(this.label5_Click_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(484, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 40);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "SALARY";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -361,7 +333,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(783, 29);
+            this.label16.Location = new System.Drawing.Point(498, 31);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(102, 40);
             this.label16.TabIndex = 115;
@@ -447,8 +419,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxname);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -486,8 +456,6 @@
         private Label label8;
         private TextBox textBoxname;
         private Label label7;
-        private Label label5;
-        private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;

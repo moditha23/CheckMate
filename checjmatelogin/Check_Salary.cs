@@ -17,25 +17,11 @@ namespace checjmatelogin
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Leave leave = new Leave();
-            leave.ShowDialog();
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
             Complaint_Employee emp = new Complaint_Employee();
             emp.ShowDialog();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            login2 lg = new login2();
-            lg.Show();
-            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -44,6 +30,18 @@ namespace checjmatelogin
             End end = new End();
             end.ShowDialog();
 
+        }
+
+        private void Check_Salary_Load(object sender, EventArgs e)
+        {
+            textBoxid.Text = login2.EmpID;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Leave_emp lf= new Leave_emp();
+            lf.ShowDialog();
+            this.Hide();
         }
     }
 }

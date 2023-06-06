@@ -12,21 +12,11 @@ namespace checjmatelogin
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label7_Click_1(object sender, EventArgs e)
         {
-            login2 lg = new login2();
+            login2 lg = new login2(); 
             lg.Show();
             this.Hide();
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            login2 lg = new login2();
-            lg.Show();
-            this.Hide();
-
-
         }
     }
 }

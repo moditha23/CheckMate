@@ -10,6 +10,9 @@
     <Compile Update="Bonus.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="checksalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Check_Salary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -31,9 +34,6 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -43,7 +43,10 @@
     <Compile Update="Leave-Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Leave.cs">
+    <Compile Update="Leave_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="login2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Salary_Home.cs">

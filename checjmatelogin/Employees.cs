@@ -20,8 +20,7 @@ namespace checjmatelogin
             DisplayAccount();
         }
 
-        SqlConnection Con = new SqlConnection("Data Source=DESKTOP-3AHD2FN;Initial Catalog=CheckMate2;Integrated Security=True");
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-3AHD2FN;Initial Catalog=CheckMate;Integrated Security=True");
+        SqlConnection Con = new SqlConnection("Data Source=laptop-6jt31sc8;Initial Catalog=Checkmate2;Integrated Security=True");
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -54,7 +53,7 @@ namespace checjmatelogin
 
         private void Employees_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("Select Department_ID, Name from Department", con);
+            SqlCommand cmd = new SqlCommand("Select Department_ID, Name from Department", Con);
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();

@@ -29,333 +29,333 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Check_Salary));
-            label5 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label2 = new Label();
-            textBox7 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            label15 = new Label();
-            textBox6 = new TextBox();
-            label14 = new Label();
-            label13 = new Label();
-            textBox4 = new TextBox();
-            label12 = new Label();
-            textBox2 = new TextBox();
-            label11 = new Label();
-            label10 = new Label();
-            label1 = new Label();
-            label7 = new Label();
-            comboBox1 = new ComboBox();
-            label9 = new Label();
-            textBox3 = new TextBox();
-            textBox1 = new TextBox();
-            label8 = new Label();
-            textBox8 = new TextBox();
-            textBox5 = new TextBox();
-            textBox9 = new TextBox();
-            SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxid = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Cursor = Cursors.Hand;
-            label5.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(634, 29);
-            label5.Name = "label5";
-            label5.Size = new Size(102, 40);
-            label5.TabIndex = 103;
-            label5.Text = "CLOSE";
-            label5.Click += label5_Click;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(634, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 40);
+            this.label5.TabIndex = 103;
+            this.label5.Text = "CLOSE";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Cursor = Cursors.Hand;
-            label3.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(294, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(99, 40);
-            label3.TabIndex = 102;
-            label3.Text = "LEAVE";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(294, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 40);
+            this.label3.TabIndex = 102;
+            this.label3.Text = "LEAVE";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Cursor = Cursors.Hand;
-            label4.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(414, 29);
-            label4.Name = "label4";
-            label4.Size = new Size(188, 40);
-            label4.TabIndex = 100;
-            label4.Text = "COMPLAINT";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(414, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(188, 40);
+            this.label4.TabIndex = 100;
+            this.label4.Text = "COMPLAINT";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(64, 64, 64);
-            label2.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(38, 29);
-            label2.Name = "label2";
-            label2.Size = new Size(226, 40);
-            label2.TabIndex = 99;
-            label2.Text = "CHECK SALARY";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.UseWaitCursor = true;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(38, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(226, 40);
+            this.label2.TabIndex = 99;
+            this.label2.Text = "CHECK SALARY";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.UseWaitCursor = true;
             // 
             // textBox7
             // 
-            textBox7.BackColor = Color.Silver;
-            textBox7.ForeColor = Color.White;
-            textBox7.Location = new Point(723, 363);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(247, 27);
-            textBox7.TabIndex = 124;
+            this.textBox7.BackColor = System.Drawing.Color.Silver;
+            this.textBox7.ForeColor = System.Drawing.Color.White;
+            this.textBox7.Location = new System.Drawing.Point(723, 363);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(247, 27);
+            this.textBox7.TabIndex = 124;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(964, 278);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(273, 27);
-            dateTimePicker1.TabIndex = 123;
+            this.dateTimePicker1.Location = new System.Drawing.Point(964, 278);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(273, 27);
+            this.dateTimePicker1.TabIndex = 123;
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.BackColor = Color.Transparent;
-            label15.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.ForeColor = SystemColors.ControlLightLight;
-            label15.Location = new Point(793, 269);
-            label15.Name = "label15";
-            label15.Size = new Size(145, 40);
-            label15.TabIndex = 122;
-            label15.Text = "PERIOD  :";
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label15.Location = new System.Drawing.Point(793, 269);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(145, 40);
+            this.label15.TabIndex = 122;
+            this.label15.Text = "PERIOD  :";
             // 
             // textBox6
             // 
-            textBox6.BackColor = Color.Silver;
-            textBox6.Location = new Point(583, 278);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(153, 27);
-            textBox6.TabIndex = 121;
+            this.textBox6.BackColor = System.Drawing.Color.Silver;
+            this.textBox6.Location = new System.Drawing.Point(583, 278);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(153, 27);
+            this.textBox6.TabIndex = 121;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.ForeColor = SystemColors.ControlLightLight;
-            label14.Location = new Point(401, 269);
-            label14.Name = "label14";
-            label14.Size = new Size(167, 40);
-            label14.TabIndex = 120;
-            label14.Text = "EXCUSED  :";
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label14.Location = new System.Drawing.Point(401, 269);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(167, 40);
+            this.label14.TabIndex = 120;
+            this.label14.Text = "EXCUSED  :";
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
-            label13.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.ForeColor = SystemColors.ControlLightLight;
-            label13.Location = new Point(497, 345);
-            label13.Name = "label13";
-            label13.Size = new Size(239, 57);
-            label13.TabIndex = 118;
-            label13.Text = "BALANCE  ";
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(497, 345);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(239, 57);
+            this.label13.TabIndex = 118;
+            this.label13.Text = "BALANCE  ";
             // 
             // textBox4
             // 
-            textBox4.BackColor = Color.Silver;
-            textBox4.Location = new Point(1292, 209);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(179, 27);
-            textBox4.TabIndex = 117;
+            this.textBox4.BackColor = System.Drawing.Color.Silver;
+            this.textBox4.Location = new System.Drawing.Point(1292, 209);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(179, 27);
+            this.textBox4.TabIndex = 117;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ForeColor = SystemColors.ControlLightLight;
-            label12.Location = new Point(1106, 201);
-            label12.Name = "label12";
-            label12.Size = new Size(180, 40);
-            label12.TabIndex = 116;
-            label12.Text = "PRESENCE  :";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label12.Location = new System.Drawing.Point(1106, 201);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(180, 40);
+            this.label12.TabIndex = 116;
+            this.label12.Text = "PRESENCE  :";
             // 
             // textBox2
             // 
-            textBox2.BackColor = Color.Silver;
-            textBox2.Location = new Point(189, 278);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(153, 27);
-            textBox2.TabIndex = 115;
+            this.textBox2.BackColor = System.Drawing.Color.Silver;
+            this.textBox2.Location = new System.Drawing.Point(189, 278);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(153, 27);
+            this.textBox2.TabIndex = 115;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = SystemColors.ControlLightLight;
-            label11.Location = new Point(12, 269);
-            label11.Name = "label11";
-            label11.Size = new Size(167, 40);
-            label11.TabIndex = 114;
-            label11.Text = "ABSENCE  :";
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(12, 269);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(167, 40);
+            this.label11.TabIndex = 114;
+            this.label11.Text = "ABSENCE  :";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.ControlLightLight;
-            label10.Location = new Point(688, 201);
-            label10.Name = "label10";
-            label10.Size = new Size(224, 40);
-            label10.TabIndex = 112;
-            label10.Text = "ATTENDENCE  :";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(688, 201);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(224, 40);
+            this.label10.TabIndex = 112;
+            this.label10.Text = "ATTENDENCE  :";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(12, 201);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 40);
-            label1.TabIndex = 110;
-            label1.Text = "BONUS  :";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(12, 201);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 40);
+            this.label1.TabIndex = 110;
+            this.label1.Text = "BONUS  :";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(1060, 136);
-            label7.Name = "label7";
-            label7.Size = new Size(228, 40);
-            label7.TabIndex = 109;
-            label7.Text = "BASE SALARY  :";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(239, 140);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(124, 28);
-            comboBox1.TabIndex = 108;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(1060, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(228, 40);
+            this.label7.TabIndex = 109;
+            this.label7.Text = "BASE SALARY  :";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.ControlLightLight;
-            label9.Location = new Point(402, 133);
-            label9.Name = "label9";
-            label9.Size = new Size(127, 40);
-            label9.TabIndex = 107;
-            label9.Text = "NAME  :";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(402, 133);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(127, 40);
+            this.label9.TabIndex = 107;
+            this.label9.Text = "NAME  :";
             // 
             // textBox3
             // 
-            textBox3.BackColor = Color.Silver;
-            textBox3.Location = new Point(531, 143);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(483, 27);
-            textBox3.TabIndex = 106;
+            this.textBox3.BackColor = System.Drawing.Color.Silver;
+            this.textBox3.Location = new System.Drawing.Point(531, 143);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(483, 27);
+            this.textBox3.TabIndex = 106;
             // 
             // textBox1
             // 
-            textBox1.BackColor = Color.Silver;
-            textBox1.Location = new Point(1293, 145);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(179, 27);
-            textBox1.TabIndex = 105;
+            this.textBox1.BackColor = System.Drawing.Color.Silver;
+            this.textBox1.Location = new System.Drawing.Point(1293, 145);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 27);
+            this.textBox1.TabIndex = 105;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(12, 130);
-            label8.Name = "label8";
-            label8.Size = new Size(223, 40);
-            label8.TabIndex = 104;
-            label8.Text = "EMPLOYEE ID  :";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(12, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(223, 40);
+            this.label8.TabIndex = 104;
+            this.label8.Text = "EMPLOYEE ID  :";
             // 
             // textBox8
             // 
-            textBox8.BackColor = Color.Silver;
-            textBox8.Location = new Point(916, 211);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(153, 27);
-            textBox8.TabIndex = 125;
+            this.textBox8.BackColor = System.Drawing.Color.Silver;
+            this.textBox8.Location = new System.Drawing.Point(916, 211);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(153, 27);
+            this.textBox8.TabIndex = 125;
             // 
             // textBox5
             // 
-            textBox5.BackColor = Color.Silver;
-            textBox5.Location = new Point(190, 209);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(298, 27);
-            textBox5.TabIndex = 126;
+            this.textBox5.BackColor = System.Drawing.Color.Silver;
+            this.textBox5.Location = new System.Drawing.Point(190, 209);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(298, 27);
+            this.textBox5.TabIndex = 126;
             // 
             // textBox9
             // 
-            textBox9.BackColor = Color.Silver;
-            textBox9.Location = new Point(494, 209);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(156, 27);
-            textBox9.TabIndex = 127;
+            this.textBox9.BackColor = System.Drawing.Color.Silver;
+            this.textBox9.Location = new System.Drawing.Point(494, 209);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(156, 27);
+            this.textBox9.TabIndex = 127;
+            // 
+            // textBoxid
+            // 
+            this.textBoxid.BackColor = System.Drawing.Color.Silver;
+            this.textBoxid.Location = new System.Drawing.Point(240, 136);
+            this.textBoxid.Name = "textBoxid";
+            this.textBoxid.Size = new System.Drawing.Size(153, 27);
+            this.textBoxid.TabIndex = 128;
             // 
             // Check_Salary
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1484, 798);
-            Controls.Add(textBox9);
-            Controls.Add(textBox5);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label15);
-            Controls.Add(textBox6);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(textBox4);
-            Controls.Add(label12);
-            Controls.Add(textBox2);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label1);
-            Controls.Add(label7);
-            Controls.Add(comboBox1);
-            Controls.Add(label9);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(label8);
-            Controls.Add(label5);
-            Controls.Add(label3);
-            Controls.Add(label4);
-            Controls.Add(label2);
-            DoubleBuffered = true;
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "Check_Salary";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Check_Salary";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1484, 798);
+            this.Controls.Add(this.textBoxid);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "Check_Salary";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Check_Salary";
+            this.Load += new System.EventHandler(this.Check_Salary_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -377,7 +377,6 @@
         private Label label10;
         private Label label1;
         private Label label7;
-        private ComboBox comboBox1;
         private Label label9;
         private TextBox textBox3;
         private TextBox textBox1;
@@ -385,5 +384,6 @@
         private TextBox textBox8;
         private TextBox textBox5;
         private TextBox textBox9;
+        private TextBox textBoxid;
     }
 }

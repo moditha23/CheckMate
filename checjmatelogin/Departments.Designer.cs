@@ -37,8 +37,6 @@
             this.txtDepDescription = new System.Windows.Forms.TextBox();
             this.txtDepName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -138,32 +136,6 @@
             this.label7.TabIndex = 64;
             this.label7.Text = "NAME  :";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(630, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 40);
-            this.label5.TabIndex = 62;
-            this.label5.Text = "LEAVE";
-            this.label5.Click += new System.EventHandler(this.label5_Click_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(481, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 40);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "SALARY";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -193,7 +165,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(763, 31);
+            this.label8.Location = new System.Drawing.Point(505, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 40);
             this.label8.TabIndex = 72;
@@ -230,8 +202,6 @@
             this.Controls.Add(this.txtDepDescription);
             this.Controls.Add(this.txtDepName);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -239,6 +209,7 @@
             this.Name = "Departments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHECKMATE";
+            this.Load += new System.EventHandler(this.Departments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -255,8 +226,6 @@
         private TextBox txtDepDescription;
         private TextBox txtDepName;
         private Label label7;
-        private Label label5;
-        private Label label4;
         private Label label3;
         private Label label1;
         private Label label8;

@@ -46,18 +46,18 @@ namespace checjmatelogin
             issue_Salary.ShowDialog();
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Employees employees = new Employees();
-            employees.ShowDialog();
-        }
-
         private void label12_Click(object sender, EventArgs e)
         {
             this.Hide();
             End end = new End();
             end.ShowDialog();
+        }
+
+        private void label11_Click_1(object sender, EventArgs e)
+        {
+            Leave_Admin la = new Leave_Admin();
+            la.ShowDialog();
+            this.Hide();
         }
     }
 }

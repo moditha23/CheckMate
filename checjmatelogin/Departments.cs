@@ -14,7 +14,7 @@ namespace checjmatelogin
     public partial class Departments : Form
     {
 
-        SqlConnection Con = new SqlConnection("Data Source=DESKTOP-3AHD2FN;Initial Catalog=CheckMate;Integrated Security=True");
+        SqlConnection Con = new SqlConnection("Data Source=laptop-6jt31sc8;Initial Catalog=Checkmate2;Integrated Security=True");
         public Departments()
         {
             InitializeComponent();
@@ -163,6 +163,11 @@ namespace checjmatelogin
                     Con.Close();
                 }
             }
+        }
+
+        private void Departments_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
