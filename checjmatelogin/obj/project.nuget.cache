@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+0Ff9zMrDTWWNxsD7QUWfyQClyx2iIbMZZwIzYshuGNoNxgHxznsmeY2RuG77o4BckzHfMnz3c9vc/9FlofWVA==",
+  "dgSpecHash": "mRA/t4ZnzxSu2BoiDrXex+jkY/l5e+lU30jypioSd6xsiuFTN7QUdrdEXhFLEMVpyTuUQsgU5joaFzAlavS1Kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\New folder - Copy\\CheckMate\\checjmatelogin\\checjmatelogin.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Backup - Copy\\CheckMate\\checjmatelogin\\checjmatelogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
