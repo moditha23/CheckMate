@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02ce3cc1b3be82936090209d1a89748a6aa2cfbb3878a85d6d2f9da7e0f8f391
-size 783
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = checjmatelogin
+build_property.ProjectDir = C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\
