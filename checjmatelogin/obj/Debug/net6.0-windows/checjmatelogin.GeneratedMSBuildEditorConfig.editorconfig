@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 is_global = true
 build_property.ApplicationManifest = 
 build_property.StartupObject = 
@@ -15,3 +16,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = checjmatelogin
 build_property.ProjectDir = C:\Users\ASUS\OneDrive\Desktop\Backup - Copy\CheckMate\checjmatelogin\
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d69fa9444a52eaa0e661978bcc869e0528f75033e14db955933dae60924ca51
+size 790
+>>>>>>> 3287106b964bd403d135b1fbb4b8b74b6907af2d

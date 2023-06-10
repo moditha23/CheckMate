@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format": 1,
   "restore": {
@@ -75,3 +76,8 @@
     }
   }
 }
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8cf14a176ea014d939580d5b553d05db3317025ba57def804107b8e8d53759e
+size 2795
+>>>>>>> 3287106b964bd403d135b1fbb4b8b74b6907af2d
